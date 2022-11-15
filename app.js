@@ -102,7 +102,7 @@ function moveInvaders() {
     }
 
     if (aliensRemoved.length === alienInvaders.length) {
-        resultsDisplay.innerHTML = 'YOU WON GG'
+        resultsDisplay.innerHTML = 'YOU WON!'
         clearInterval(invadersId)
     }
 }
@@ -129,7 +129,7 @@ function shoot(e) {
             const deadAlien = alienInvaders.indexOf(currentLaserIndex)
             aliensRemoved.push(deadAlien)
             results++
-            resultsDisplay.innerHTML = results
+            resultsDisplay.innerHTML = results + ' Aliens Killed!'
             // alienInvaders.remove(deadAlien)
         }
     }
